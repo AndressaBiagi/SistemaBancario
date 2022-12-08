@@ -1,4 +1,4 @@
-package br.com.sistemabancario.atividade;
+package br.com.sistemabancario.atividade.POJO;
 
 public class ClientePF extends Cliente {
 
@@ -6,8 +6,8 @@ public class ClientePF extends Cliente {
 	private String nome;
 	private int idade;
 
-	public ClientePF(int numConta, int agencia, String telefone, double saldo, double limiteChequeEspecial, String cpf,
-			String nome, int idade) {
+	public ClientePF(int numConta, int agencia, String telefone, double saldo, double limiteChequeEspecial, 
+			String nome, int idade, String cpf) {
 		super(numConta, agencia, telefone, saldo, limiteChequeEspecial);
 		this.cpf = cpf;
 		this.nome = nome;
@@ -17,6 +17,18 @@ public class ClientePF extends Cliente {
 
 	public String getNome() {
 		return nome;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setIdade(int idade) {
+		this.idade = idade;
 	}
 
 	public String getCpf() {

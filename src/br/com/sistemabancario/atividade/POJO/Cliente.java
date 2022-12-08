@@ -1,4 +1,4 @@
-package br.com.sistemabancario.atividade;
+package br.com.sistemabancario.atividade.POJO;
 
 public class Cliente {
 
